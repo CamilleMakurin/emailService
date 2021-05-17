@@ -42,3 +42,9 @@ Smaple json:
 
 4. After POST is send the email will be sent to email addresses in sendTo and transaction id will be returned in response.
 You can check the status of the transaction by sending GET request to return URL or by executing GET in transaction controller with returned transaction id
+Transaction is saved id H2 embedded database in TRANSACTION table. H2 database console can be accessed by URL:
+http://localhost:8080/h2-console/login
+Connection details:
+db Url: jdbc:h2:mem:test
+username: test
+password: test
